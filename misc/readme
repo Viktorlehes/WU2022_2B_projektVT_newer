@@ -1,0 +1,3 @@
+sass style.sass style.css --watch
+
+cd Documents/github/WU2022_2B_projektVT_newer/css
