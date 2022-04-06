@@ -158,7 +158,7 @@ header
   display: grid
   grid-template-columns: repeat(2, 50%)
   grid-template-rows: auto
-  margin-bottom: 4.5rem
+  margin-bottom: 4rem
 
 
 .section-body .img-item 
@@ -179,8 +179,6 @@ a:link
   font-weight: 500
   color: black
 
-
-
 .section-body-price 
   display: grid
   align-items: center
@@ -193,24 +191,58 @@ a:link
 
 
 /* Footer */
-#footer 
-  background-color: rgba(255, 255, 255, 0.644)
-  color: black
-  height: 13rem
-  padding-top: 3rem
+footer
+  width: 100%
+  display: flex
+  justify-content: center
+  margin-bottom: 40px
 
 
-#footer h1 
-  padding-top: 2rem
-  padding-left: 5rem
+.footer-wrapper
+  width: 80%
+  background-color:  rgb(47, 53, 66)
+  border-radius: 40px
+  height: 250px
+  display: flex
+  align-items: center
+  flex-direction: column
 
-
-#footer p 
-  padding-left: 6rem
-  padding-top: 2rem
+.footer-wrapper h1 
+  font-size: 20px
+  line-height: 23px
   font-weight: 500
-  font-size: 18px
+  color: rgb(238, 238, 238)
+  padding-top: 60px
 
+#footer-search-bar
+  width: 70%
+  background-color: white
+  height: 50px
+  border-radius: 40px
+  margin-top: 30px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  
+#footer-search
+  color: #83838367
+  font-size: 14px
+  padding-left: 15px
+
+#footer-button
+  background-color: #0157c7
+  margin-right: 5px
+  height: 41px
+  border-radius: 40px
+  width: 200px
+  display: flex
+  justify-content: center
+  align-items: center
+
+#footer-button h2 
+  color: white
+  font-size: 14px
+  padding-top: 12px
 
 /* about page  font-family: 'Source Sans Pro', sans-serif*/
 
@@ -338,14 +370,30 @@ h1, h2, h3, h4, h5, h6
   width: 100%
   font-family: Roboto,sans-serif
   color: black
-  font-size: 14px
-  line-height: 23px
-  font-weight: 500
   margin-bottom: 1rem
 
-#product-buy
+.product-buy
   width: 100%
+  background-color: #01377e
+  height: 50px
+  display: flex
+  flex-direction: row
+  border-radius: 14px
+  margin-bottom: 15px
 
+
+.product-buy img
+  height: 50px
+  width: 50px
+  margin-left: 12px 
+
+.product-buy h1 
+  font-size: 24px
+  line-height: 23px
+  font-weight: 500
+  color: white
+  padding-top: 16px
+  padding-left: 30px
 
 
 @media only screen and (min-width: 800px) 
