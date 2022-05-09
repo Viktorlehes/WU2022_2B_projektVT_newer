@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap") 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap')
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;625;700&display=swap') 
 * 
   margin: 0
 
@@ -16,7 +16,6 @@ body
 
 header 
   margin-bottom: 1rem
-
 
 /* Navbar */
 .navbar a 
@@ -105,12 +104,13 @@ header
   position: fixed
   top: 0
   left: -100%
-  width: 300px
-  height: 100%
+  width: 250px
+  height: 200px
+  border-bottom-right-radius: 10px
   margin: 0
   padding: 80px 0
   list-style: none
-  background-color: #ECEFF1
+  background-color: #ffffff
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4)
   transition-duration: 0.25s
 
@@ -118,7 +118,7 @@ header
 .menu__item 
   display: block
   padding: 12px 24px
-  color: #333
+  color: black
   font-family: "Roboto", sans-serif
   font-size: 20px
   font-weight: 600
@@ -140,6 +140,7 @@ header
   font-size: 2.3rem
   font-weight: 500
   padding-top: 2rem
+  font-family: 'Quicksand', sans-serif 
 
 
 .info #info-welcome 
@@ -168,6 +169,7 @@ header
 
 .section-body a p 
   color: #4d4d4d
+  font-family: 'Quicksand', sans-serif 
 
 a:link 
   text-decoration: none
@@ -190,60 +192,189 @@ a:link
   background-color: rgba(0, 255, 255, 0.13)
 
 
-/* Footer */
-footer
-  width: 100%
-  display: flex
+/* Contact site */ 
+
+#contact_container
+  padding: 5%
+
+#contact-header 
+  display: grid
   justify-content: center
-  margin-bottom: 40px
+  align-items: center
+  font-size: 3.5rem
+  font-weight: 500
+  height: 260px
+  font-family: 'Quicksand', sans-serif
+  text-transform: uppercase
+  line-height: .95em
+  letter-spacing: 2px
 
+.contact-question 
+  font-family: 'Quicksand', sans-serif  
+  font-weight: 500
+  font-size: 2rem
+  width: 100%
+  text-transform: uppercase
+  line-height: .95em
+  letter-spacing: 2px
+  padding-left: 5%
+  margin-top: 1rem
+  margin-bottom: 1rem
 
-.footer-wrapper
-  width: 80%
-  background-color:  rgb(47, 53, 66)
-  border-radius: 40px
-  height: 250px
+.support-wrapper 
   display: flex
+  flex-flow: nowrap
+  justify-content: center
   align-items: center
   flex-direction: column
 
-.footer-wrapper h1 
-  font-size: 20px
-  line-height: 23px
-  font-weight: 500
-  color: rgb(238, 238, 238)
-  padding-top: 60px
 
-#footer-search-bar
-  width: 70%
-  background-color: white
+.support-box
+  display: grid
+  justify-items: center
+  align-content: center
+  width: 100% 
+  height: 150px
+  color: #1899da
+  border: #5c7d8d42 solid 3px
+  margin-top: 10px
+  border-radius: 5px
+  font-weight: 500
+  font-size: 1rem
+  line-height: .95em
+  letter-spacing: 2px
+  text-transform: uppercase
+
+
+.support-box:hover
+  border: #379ccec9 solid 3px
+  transition: border 0.4s ease
+  cursor: pointer
+
+#FAQ h1
+  margin-top: 3rem
+  margin-bottom: 1rem
+  padding-left: 5%
+  font-family: 'Quicksand', sans-serif  
+  font-weight: 500
+  font-size: 2rem
+  line-height: .95em
+  letter-spacing: 2px
+
+
+.FAQ_question
   height: 50px
-  border-radius: 40px
-  margin-top: 30px
+  border: #5c7d8d42 solid 3px
+  background-color: white
+  margin-top: 20px
+  width: 100%
+  border-radius: 4.5px
+
+#question_box
   display: flex
   justify-content: space-between
   align-items: center
+  padding-left: 10px
+  width: 100%
+  font-weight: 500
+  font-size: 1rem
+  line-height: .95em
+  letter-spacing: 2px
+  text-transform: uppercase
+  text-decoration: none
+
+.Button_selected 
+  display: inline
+  height: fit-content
   
-#footer-search
-  color: #83838367
-  font-size: 14px
-  padding-left: 15px
+.FAQ
+  display: none
 
-#footer-button
-  background-color: #0157c7
-  margin-right: 5px
-  height: 41px
-  border-radius: 40px
-  width: 200px
+.FAQ_selected
+  display: block
+  font-weight: 500
+  font-size: 1rem
+  line-height: 1.35em
+  letter-spacing: 2px
+  text-transform: uppercase
+  text-decoration: none
+  text-align: left
+  padding: 15px 15px
+  background-color: #1899da28
+  border-radius: 20px
+  margin: 15px
+
+
+
+
+.FAQ_question:hover
+  transition: 0.4s
+  border: #1899da solid 3px
+
+.FAQ_question img
+  height: 30px
+  width: 30px
+  padding-right: 10px
+
+/* Footer */
+footer
+  height: 300px
+  background-color:  rgb(23, 23, 24)
+  margin-top: 30px
+  padding: 20px
+
+.footer-wrapper
   display: flex
-  justify-content: center
-  align-items: center
+  flex-direction: column
+  color: white 
+  font-family: "quicksand", sans-serif
+  font-size: 10px
+  font-weight: 300 
+  text-transform: uppercase
 
-#footer-button h2 
+.footer-wrapper img
+  height: 114px
+  width: 100px
+
+.section-footer button
+  height: 30px
+  border-radius: 5px
   color: white
-  font-size: 14px
-  padding-top: 12px
+  background-color: rgb(23, 23, 24)
+  cursor: pointer
+  border: none
+  border: white solid 1px
+  
+#subscribe
+  width: 100%
+  padding-top: 20px
+  
 
+#email-input
+  border-radius: 5px
+  height: 30px
+  width: 300px
+  margin-top: 15px
+  background-color: rgb(23, 23, 24)
+  color: white
+  padding-left: 10px
+  margin-right: 3px
+  border: none
+  border: white solid 1px
+.footer-info-wrapper
+  display: flex
+  margin-top: 100px
+  padding-left: 10px
+  font-size: 15px
+
+.footer-item
+  margin-left: 5px
+  margin-right: 5px
+  color: white
+
+.footer-item hr
+  
+  
 /* about page  font-family: 'Source Sans Pro', sans-serif*/
 
 #head-page-wrapper
@@ -326,12 +457,6 @@ footer
   text-transform: uppercase
   font-family: "poppins", sans-serif
   
-
-h1, h2, h3, h4, h5, h6
-  font-weight: 700
-  margin-bottom: 1rem
-  font-family: Roboto,sans-serif
-
 .content-product h2 
   font-weight: 600
   margin-top: 10px
@@ -479,5 +604,3 @@ h1, h2, h3, h4, h5, h6
   #head-page-wrapper img
     width: 600px
     height: 600px
-
-
